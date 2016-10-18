@@ -15,9 +15,9 @@ Raspberry pi 2 broadcom bcm2836 soc with a 900 mhz 32-bit quad-core ARM cortex-a
 - Application code compiled in thumb is 30% smaller on average than the same code compiled in ARM and normally 30% faster
 - The core is successful mainly because of the extremely small but high performance processor - slightly more than 70,000 transistors in all an with extremely low power consumption.
 - Three state pipeline(during normal operation while one instruction is being executed its successor is being decoded and a third instruction is being fetched from memory) used, so instructions are executed in three stages:
-+ Fetch: instruction fetched from memory
-+ Decode: decoding of registers used in instruction
-+ Execute: registers read from register bank perform shift and alu operations write registers back to register bank
+	+ Fetch: instruction fetched from memory
+	+ Decode: decoding of registers used in instruction
+	+ Execute: registers read from register bank perform shift and alu operations write registers back to register bank
 .. image :: https://homepages.thm.de/~hg10013/Lehre/MMS/WS0304_SS04/Ioannis/Images/e16.gif 
 - The program counter points to the instruction being fetched rather than to the instruction being executed. this is important because it means that the program counter value used in an executing instruction is always two instructions ahead of the address.
 
@@ -28,7 +28,6 @@ the diagram illustrates the in-line decompression process of Thumb instructions 
 the decode stage of the pipeline. This process creates a 32-bit ARM equivalent instruction
 from the 16-bit Thumb instruction, decodes the instruction,
 and passes it on to theexecute stage.
-
 .. image::https://homepages.thm.de/~hg10013/Lehre/MMS/WS0304_SS04/Ioannis/Images/e10.gif
 
 Armv8 Architecture:
