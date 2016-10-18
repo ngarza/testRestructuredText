@@ -28,6 +28,7 @@ the diagram illustrates the in-line decompression process of Thumb instructions 
 the decode stage of the pipeline. This process creates a 32-bit ARM equivalent instruction
 from the 16-bit Thumb instruction, decodes the instruction,
 and passes it on to theexecute stage.
+
 .. image :: https://homepages.thm.de/~hg10013/Lehre/MMS/WS0304_SS04/Ioannis/Images/e10.gif
 
 Armv8 Architecture:
